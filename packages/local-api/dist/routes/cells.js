@@ -35,6 +35,9 @@ const createCellsRouter = (filename, dir) => {
                     yield promises_1.default.writeFile(fullPath, '[]', 'utf-8');
                     res.send([]);
                 }
+                else {
+                    throw err;
+                }
             }
             else {
                 throw err;

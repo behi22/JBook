@@ -33,6 +33,8 @@ export const createCellsRouter = (filename: string, dir: string) => {
         if (err.code === 'ENOENT') {
           await fs.writeFile(fullPath, '[]', 'utf-8');
           res.send([]);
+        } else {
+          throw err;
         }
       } else {
         throw err;
