@@ -1,1 +1,1 @@
-[{"content":"","type":"text","id":"dn0rr"},{"content":"","type":"text","id":"uh5cj"},{"content":"uyjcuchgchgxh","type":"code","id":"2qz0y"},{"content":"","type":"text","id":"dpgcu"}]
+[{"content":"Hello World","type":"text","id":"64azw"},{"content":"const a = 1;","type":"code","id":"c3vs3"},{"content":"show(a);","type":"code","id":"gyc3y"}]
