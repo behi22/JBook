@@ -45,7 +45,7 @@ eg. displaying a markdown editor, code editor ,etc. This application is an inter
 
 ## Screenshots
 
-![Example screenshot](./resources/images/Screenshot.png)
+![Example screenshot](./resources/images/image.png)
 
 ## Usage
 
