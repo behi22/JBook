@@ -11,11 +11,12 @@ export const useCumulativeCode = (cellId: string) => {
         var show = (value) => {
           const root = document.querySelector('#root');
     
-          if (typeof value === 'object') {
-            if (value.$$typeof && value.props) {
-              _ReactDOM.render(value, root);
+          if (typeof value === 'object' || typeof value === 'function') {
+            const result = typeof value === 'object' ? value : value();
+            if (result.$$typeof && result.props) {
+              _ReactDOM.render(result, root);
             } else {
-              root.innerHTML = JSON.stringify(value);
+              root.innerHTML = JSON.stringify(result);
             }
           } else {
             root.innerHTML = value;

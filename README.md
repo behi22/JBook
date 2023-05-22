@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+#
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+JavaScript Notebook
 
-## Available Scripts
+> This project is an interactive coding environment. You can write JavaScript, see it executed, and write comprehensive documentation using markdown.
+>
+> <!--Live demo [_here_]().  If you have the project hosted somewhere, include the link here. -->
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+<!-- * [License](#license) -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## General Information
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This web application is developed to showcase knowledge of developing responsive and interactive webpages using Typescript, React and managing the state
+of the application using redux. The web app uses esbuild to bundle the user's code and also uses various libraries to do various things
+eg. displaying a markdown editor, code editor ,etc. This application is an interactive coding environment. You can write JavaScript, see it executed, and write comprehensive documentation using markdown.
 
-### `npm test`
+### Important Note: The link of this application takes you to a demo that is online. If you want to be able to save code and text for this application, You can use the npm package that I have published to npm and the local server will store and fetch code on your device. The package is saved on npmjs.com under the name: jsnote-bb
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npm - 8.15.0
+- React.js
+- Typescript
+- Redux.js
+- Node.js
+- Express
+- esbuild
+- lerna
+- HTML - version html5
+- CSS
+- git - version 2.38.1.windows.1
+- github
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Example screenshot](./resources/images/Screenshot.png)
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This is an interactive coding environment. You can write JavaScript, see it executed, and write comprehensive documentation using markdown.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Status
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Project is: Complete
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Room for Improvement
 
-## Learn More
+- There is an issue currently with using hooks inside of function react components which can be addressed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Many thanks to Udemy for including the this project on their React and Typescript: Build a Portfolio Project Course.
+
+## Contact
+
+Created by Behbod Babai - feel free to contact me via email!
+my email: behibabai@gmail.com
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->

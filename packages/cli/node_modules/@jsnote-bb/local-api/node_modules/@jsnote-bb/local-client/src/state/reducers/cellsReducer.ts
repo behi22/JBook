@@ -15,8 +15,75 @@ interface CellsState {
 const initialState: CellsState = {
   loading: false,
   error: null,
-  order: [],
-  data: {},
+  order: ['a11111', 'b22222', 'c33333'],
+  data: {
+    a11111: {
+      id: 'a11111',
+      content: `## ***JavaScript Notebook by Behbod Babai***
+This is an interactive coding environment. You can write JavaScript, see it executed, and write comprehensive documentation using markdown. 
+  - Click any cell (including this one) to edit it.
+  - The code in each code editor is all joined together into one file. If you define a variable in an earlier cell, you can refer to it in the following cell!
+  - You can show any react component, string, number, or anything else by calling the \`show\` function. This is a function built into this environment.
+  - Re-order or delete cells using the buttons on the top right.
+  - Code cells have a built-in format button that formats your code for you to make it prettier!
+  - Add new cells by hovering on the divider between, before, or after each cell.
+      
+All of your changes get saved to the file you opened JBook with. So, if you ran \`npx jsnote-bb serve test.js\`, all of the text and code you write will be saved to the \`test.js\` file.
+      I have deployed this package on \`npmjs.com\` as well, you can search for it and run it under the name: \`jsnote-bb\`.
+      Happy Coding my friends, and remember to drink lots of coffee XD`,
+      type: 'text',
+    },
+    b22222: {
+      id: 'b22222',
+      content: `import { useState } from 'react';
+
+      const Counter = () => {
+        const [count, setCount] = useState(0);
+        return (
+          <div>
+            <button onClick={() => setCount(count + 1)}>
+              Click Me to Add to Counter
+            </button>
+            <h3>Count: {count}</h3>
+          </div>
+        );
+      };
+      
+      const changeColor = () => {
+        return (
+          <button
+            onClick={() => {
+              document.querySelector('#root').parentElement.parentElement.style =
+                'background-color: cyan; color: black';
+            }}
+          >
+            Click Me to Change the Color
+          </button>
+        );
+      };
+      
+      // Display any variable or React component by calling 'show'
+      show(changeColor);`,
+      type: 'code',
+    },
+    c33333: {
+      id: 'c33333',
+      content: `const App = () => {
+        return (
+          <div>
+            <h3>App Says Hi!</h3>
+            <i>Counter component will be rendered below...</i>
+            <hr />
+            {/* Counter was declared in an earlier cell - We can reference it here! */}
+            <Counter />
+          </div>
+        );
+      };
+      
+      show(App);`,
+      type: 'code',
+    },
+  },
 };
 
 const reducer = produce((state: CellsState = initialState, action: Action) => {

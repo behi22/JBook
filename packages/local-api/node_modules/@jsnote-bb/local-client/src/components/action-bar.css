@@ -6,6 +6,10 @@
   transition: opacity 0.3s;
 }
 
+.action-bar button {
+  margin-left: 2px;
+}
+
 .action-bar:hover {
   opacity: 1;
 }
